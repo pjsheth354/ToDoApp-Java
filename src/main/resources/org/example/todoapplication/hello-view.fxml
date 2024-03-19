@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.todoapplication.todoController">
+   <children>
+      <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To-do List">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="listOfTasks" layoutX="14.0" layoutY="99.0" prefHeight="338.0" prefWidth="386.0" />
+      <Text layoutX="18.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Task to do: (Consider Start of Task with Zero)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4e4" height="180.0" layoutX="414.0" layoutY="19.0" stroke="#9e9b9b" strokeType="INSIDE" width="282.0" />
+      <Button fx:id="taskButton" layoutX="528.0" layoutY="165.0" mnemonicParsing="false" onAction="#addNewTaskButton" prefHeight="27.0" prefWidth="69.0" text="Add New" />
+      <TextField fx:id="taskText" layoutX="474.0" layoutY="32.0" prefHeight="25.0" prefWidth="206.0" />
+      <Text layoutX="430.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="428.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priority:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="428.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="descriptionText" layoutX="428.0" layoutY="134.0" prefHeight="25.0" prefWidth="250.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4e4" height="77.0" layoutX="414.0" layoutY="205.0" stroke="#9e9b9b" strokeType="INSIDE" width="282.0" />
+      <Text layoutX="424.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove No:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="removeButton" layoutX="530.0" layoutY="248.0" mnemonicParsing="false" onAction="#removeTaskButton" prefHeight="25.0" prefWidth="68.0" text="Remove" />
+      <TextField fx:id="removeNumber" layoutX="518.0" layoutY="214.0" prefHeight="25.0" prefWidth="167.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4e4" height="77.0" layoutX="414.0" layoutY="289.0" stroke="#9e9b9b" strokeType="INSIDE" width="282.0" />
+      <Text layoutX="425.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mark No:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="markButton" layoutX="509.0" layoutY="331.0" mnemonicParsing="false" onAction="#markAsCompleteButton" prefHeight="25.0" prefWidth="116.0" text="Mark as Complete" />
+      <TextField fx:id="markNumber" layoutX="498.0" layoutY="301.0" prefHeight="25.0" prefWidth="186.0" />
+      <ComboBox fx:id="priorityText" layoutX="490.0" layoutY="69.0" prefHeight="25.0" prefWidth="186.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4e4" height="203.0" layoutX="416.0" layoutY="372.0" stroke="#9e9b9b" strokeType="INSIDE" width="282.0" />
+      <Text layoutX="427.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update No:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="updateNumber" layoutX="516.0" layoutY="381.0" prefHeight="25.0" prefWidth="167.0" />
+      <Text layoutX="430.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="updateTaskText" layoutX="477.0" layoutY="418.0" prefHeight="25.0" prefWidth="206.0" />
+      <ComboBox fx:id="updatePriorityText" layoutX="496.0" layoutY="456.0" prefHeight="25.0" prefWidth="186.0" />
+      <Text layoutX="430.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priority:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="431.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="updateDescriptionText" layoutX="431.0" layoutY="513.0" prefHeight="25.0" prefWidth="250.0" />
+      <Button fx:id="updateButton" layoutX="540.0" layoutY="544.0" mnemonicParsing="false" onAction="#updateDataButton" text="Update" />
+      <TextArea fx:id="errorHandle" layoutX="14.0" layoutY="472.0" prefHeight="99.0" prefWidth="386.0" />
+      <Text layoutX="18.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error Values:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
