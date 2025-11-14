@@ -1,6 +1,7 @@
 # ToDoApp-Java
 Created To-Do Application using Java to create, update, delete and mark as complete task. 
-##Screenshots
+
+## Screenshots
 1.	Start of an Application
  <img width="610" height="534" alt="image" src="https://github.com/user-attachments/assets/6be14f41-ee8d-4ff9-a66d-f6636544ac9e" />
 
